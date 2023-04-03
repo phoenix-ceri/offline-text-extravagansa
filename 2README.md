@@ -1,56 +1,59 @@
-# Module 18 Mini-Project: Student Statistics Back-End
+# 19 Progressive Web Applications (PWA): Text Editor
 
-In this activity, you will start with an existing codebase for a mostly complete application.
+## Your Task
 
-You will be adding aggregate methods to the `Student` controller to show a student's overall grade and the number of students.
+Explore the completed J.A.T.E application that has been provided to gain a deeper understanding of how a Progressive Web Application (PWA) is properly configured in a web application.
 
-Finally, you will spend the remaining time deploying the application using MongoDB Atlas and Heroku.
+Your task is to record a video between 90-seconds to 2-minutes in length of you narrating a screen share of the J.A.T.E application while explaining the key components that comprise it's PWA.
 
-## Instructions
+## User Story
 
-The completed application should meet the following criteria:
+```md
+AS A developer
+I WANT to better understand how a PWA is setup
+SO THAT I can explain the purpose in a technical setting
+```
 
-* As a user, I want to be able to view all the students and get a total of the number of students enrolled.
+## Acceptance Criteria
 
-* As a user, I want to be able to view a specific student's overall grade in the class using MongoDB operators and their score on each assignment.
+```md
+GIVEN a completed text editor web application
+WHEN I showcase the application in the video
+THEN I should be able to explain all aspects of a PWA
+WHEN I show the webpack plugins
+THEN I explain how I have a generated HTML file, service worker, and a manifest file
+WHEN I open the text editor
+THEN I show that IndexedDB has immediately created a database storage
+WHEN I enter content and subsequently click off of the DOM window
+THEN I explain how the content in the text editor has been saved with IndexedDB
+WHEN I reopen the text editor after closing it
+THEN I explain how the content in the text editor has been retrieved from our IndexedDB
+WHEN I load my web application
+THEN I should have, and can explain, the registered service worker using workbox
+```
 
-* As a user, I want to be able to execute create, read, update, and delete operations on `courses`, `students`, and `assignments`.
+## Grading Requirements
 
-### Specifications
+> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
+>
+> - A repository that has no code
+>
+> - A repository that includes a unique name but nothing else
+>
+> - A repository that includes only a README file but nothing else
+>
+> - A repository that only includes starter code
 
-The completed application should meet the following specifications:
+This Challenge is graded based on the following criteria:
 
-* The application must make use of a MongoDB database, the Mongoose ODM, and Express.js.
+### Walkthrough Video
 
-* The database must be seeded with sample data.
+- A walkthrough video that demonstrates the functionality, and your understanding of the Progressive Web Application, and a link to the video should be included in your README file.
 
-* The `Student` controller should have a `headCount` aggregate function to get the total number of students by making use of MongoDB aggregate operators.
+## Review
 
-* The `Student` controller should have a `grade` aggregate function that returns a single student and also the student's overall grade using MongoDB aggregate operators.
+You are required to submit the following for review:
 
-* The project will require research of MongoDB operators such as `$addToSet`, `$unwind`, `$group`, `$match`, and `$avg`.
+- The URL of the video explanation
 
-* `Student` lookup will require use of the `ObjectId()` method.
-
-* The endpoints `api/students/<student id>` and `api/students/` should be tested using Insomnia to ensure that the aggregate functions return the student's overall grade and headcount respectively.
-
-* This back-end application should be deployed using Heroku and MongoDB Atlas. Refer to the resources below for further instructions.
-
-## 💡 Hints
-
-* Be sure to run `npm run seed` to seed your database before testing with Insomnia.
-
-* Run `npm run dev` to have the server automatically restart whenever changes are saved.
-
-* How can we use the `$avg` [MongoDB operator](https://docs.mongodb.com/manual/reference/operator/aggregation/avg/) to calculate the overall grade for a student?
-
-* How can we use the `ObjectId` [Mongoose `Type` method](https://mongoosejs.com/docs/schematypes.html#objectids) to ensure we are able to query a student based on the value in their `_id` field?
-
-* How can we use the information from [The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/mongodb/deploy-with-heroku-and-mongodb-atlas) to help deploy the mini-project?
-
-## 🏆 Bonus
-
-* What is the difference between Mongoose and MongoDB? What are the advantages and disadvantages of both?
-
----
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+- The URL of the J.A.T.E. application deployed to your GitHub repository, with a unique name and a README describing the project
