@@ -16,16 +16,16 @@
   This is a PWA that allows the user to download an application to their local computer and edit text or code offline.
 
   ## Installation
-  tba
+  Npm i , then Npm run dev in the client folder, then npm run server in the server folder
 
   ## Usage
-  tba
+https://www.youtube.com/watch?v=LrATKS6hZOE
 
   ## Licenses
     This project is covered under the MIT license. To learn more about what this means, click the license button at the top.
 
   ## Contributing
-  There are no controbustions needed
+  There are no contributions needed
 
   ## Tests
   n/a
